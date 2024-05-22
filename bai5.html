@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('nhap ten ngoi sao')
+
+    function tim() {
+        let x = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let y = ['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo']
+        let dem=0
+        for (let i = 0; i < x.length; i++) {
+            if (a == x[i]) {
+                let b;
+                b = y[i]; dem++
+                return(b)
+            }
+
+        }if(dem==0){
+            return 'ko co ngoi sao nao'
+        }
+
+    }
+    document.write(tim())
+</script>
+</body>
+</html>
